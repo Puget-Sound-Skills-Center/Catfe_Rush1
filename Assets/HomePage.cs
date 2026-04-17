@@ -7,6 +7,6 @@ public class HomePage : MonoBehaviour
 {
     public void Playgame()
     {
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync(1);
     }
 }
