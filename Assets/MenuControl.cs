@@ -8,7 +8,7 @@ public class MenuControl : MonoBehaviour
     //Start is called before the first frame update
     void Start()
     {
-        menuCanvas.SetActive(false);
+        menuCanvas.SetActive(true);
     }
 
     //Updarte is called once per frame
