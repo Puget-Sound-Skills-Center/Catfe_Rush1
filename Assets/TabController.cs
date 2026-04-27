@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,8 +20,9 @@ public class TabController : MonoBehaviour
         // Loop through all pages to reset them
         for (int i = 0; i < pages.Length; i++)
         {
-            pages[i].SetActive(false);
+            pages[i].SetActive(true);
             tabImages[i].color = Color.grey;
+            MonoBehaviour.print("kvkub");
         }
 
         //Activate the specific tab and its image
