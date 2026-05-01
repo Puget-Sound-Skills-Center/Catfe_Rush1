@@ -194,6 +194,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77511966}
   m_CullTransparentMesh: 1
+--- !u!1 &90959862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90959863}
+  m_Layer: 5
+  m_Name: CraftingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &90959863
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90959862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1872860809}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &131945779
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,13 +311,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 864516156}
+        m_TargetAssemblyTypeName: CornerSlotManager, Assembly-CSharp
+        m_MethodName: SetCornerItem
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: -3648228656902447442, guid: 5234164b4e43a974a8e252720631bcc0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -339,6 +374,8 @@ GameObject:
   - component: {fileID: 142939149}
   - component: {fileID: 142939148}
   - component: {fileID: 142939151}
+  - component: {fileID: 142939153}
+  - component: {fileID: 142939152}
   m_Layer: 5
   m_Name: croissant
   m_TagString: Untagged
@@ -408,19 +445,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 142939149}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -6938490026939651921, guid: 421d82b52dcc7df4f89483a61ab9c128, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &142939149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,6 +530,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &142939152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142939146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &142939153
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142939146}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &170629383
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,6 +832,8 @@ GameObject:
   - component: {fileID: 224499926}
   - component: {fileID: 224499925}
   - component: {fileID: 224499928}
+  - component: {fileID: 224499930}
+  - component: {fileID: 224499929}
   m_Layer: 5
   m_Name: brownies
   m_TagString: Untagged
@@ -851,19 +903,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 224499926}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 1272025949865165191, guid: aa8dc3221091c234e81a809b7068f140, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &224499926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,6 +988,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &224499929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224499923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &224499930
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224499923}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &257151429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,6 +1284,8 @@ GameObject:
   - component: {fileID: 413372282}
   - component: {fileID: 413372281}
   - component: {fileID: 413372284}
+  - component: {fileID: 413372286}
+  - component: {fileID: 413372285}
   m_Layer: 5
   m_Name: bagels
   m_TagString: Untagged
@@ -1288,19 +1355,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 413372282}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 9083819237498815245, guid: 46e5347db0c14b542a9291c84061d5eb, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &413372282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1385,6 +1440,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &413372285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413372279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &413372286
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413372279}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &421698820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,6 +1800,8 @@ GameObject:
   - component: {fileID: 527778029}
   - component: {fileID: 527778028}
   - component: {fileID: 527778031}
+  - component: {fileID: 527778033}
+  - component: {fileID: 527778032}
   m_Layer: 5
   m_Name: cakepop
   m_TagString: Untagged
@@ -1789,19 +1871,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 527778029}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 6777603677767501239, guid: 578b306b30a79354cb6043cac1862f6e, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &527778029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1886,6 +1956,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &527778032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527778026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &527778033
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527778026}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!224 &575813446 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2980851659845789117, guid: f2ab521152df6cf408d3a8a5c169b314, type: 3}
@@ -1980,6 +2075,8 @@ GameObject:
   - component: {fileID: 769980468}
   - component: {fileID: 769980467}
   - component: {fileID: 769980470}
+  - component: {fileID: 769980472}
+  - component: {fileID: 769980471}
   m_Layer: 5
   m_Name: muffins
   m_TagString: Untagged
@@ -2049,19 +2146,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 769980468}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -7149011625074661618, guid: fda40a5dbec8a1e4ca76ee201ddb399e, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &769980468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2146,6 +2231,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &769980471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769980465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &769980472
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769980465}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &852808494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2404,6 +2514,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c1b568155abba74680497842995ee1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &864516154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 864516155}
+  - component: {fileID: 864516156}
+  m_Layer: 5
+  m_Name: CornerSlotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &864516155
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864516154}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1872860809}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &864516156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864516154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlot: {fileID: 1238387692}
+  mergedResult: {fileID: -6964871260671746854, guid: 91274dc8201943143a3cf9cc76254c45, type: 3}
 --- !u!1 &893935178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2744,7 +2904,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.1099243, y: 1.1790161}
+  m_AnchoredPosition: {x: -1.1098633, y: 1.1790771}
   m_SizeDelta: {x: 2.5977783, y: 1.3669434}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047867988
@@ -3109,6 +3269,8 @@ GameObject:
   - component: {fileID: 1122012330}
   - component: {fileID: 1122012329}
   - component: {fileID: 1122012332}
+  - component: {fileID: 1122012334}
+  - component: {fileID: 1122012333}
   m_Layer: 5
   m_Name: sandwich
   m_TagString: Untagged
@@ -3178,19 +3340,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1122012330}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3491343670322819000, guid: 83469b4bf7a6d22459141486f82aa08d, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1122012330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3275,6 +3425,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1122012333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122012327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &1122012334
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122012327}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1148518550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3571,6 +3746,8 @@ GameObject:
   - component: {fileID: 1180318682}
   - component: {fileID: 1180318681}
   - component: {fileID: 1180318684}
+  - component: {fileID: 1180318686}
+  - component: {fileID: 1180318685}
   m_Layer: 5
   m_Name: bread
   m_TagString: Untagged
@@ -3594,8 +3771,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -402.80792, y: 6.9402}
-  m_SizeDelta: {x: 406.9318, y: 92.3091}
+  m_AnchoredPosition: {x: -419.58917, y: 6.9402}
+  m_SizeDelta: {x: 373.3692, y: 92.3091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1180318681
 MonoBehaviour:
@@ -3641,13 +3818,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
+      - m_Target: {fileID: 11500000, guid: bb2ef2faa5e4f884c8eccde3cd06fdc3, type: 3}
+        m_TargetAssemblyTypeName: 
         m_MethodName: 
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: -444514819620327135, guid: 2b7a8af7552bd7542a3f299559e38de0, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3737,6 +3914,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1180318685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180318679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &1180318686
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180318679}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1203878672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3875,6 +4077,81 @@ RectTransform:
   m_AnchoredPosition: {x: -5.5499, y: -169}
   m_SizeDelta: {x: 111.0997, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1238387690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238387691}
+  - component: {fileID: 1238387693}
+  - component: {fileID: 1238387692}
+  m_Layer: 5
+  m_Name: cornerSlot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1238387691
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238387690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1872860809}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 775.3926, y: -392.07047}
+  m_SizeDelta: {x: 257.324, y: 225.8592}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1238387692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238387690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1238387693
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238387690}
+  m_CullTransparentMesh: 1
 --- !u!1 &1268949172
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,6 +4165,8 @@ GameObject:
   - component: {fileID: 1268949175}
   - component: {fileID: 1268949174}
   - component: {fileID: 1268949177}
+  - component: {fileID: 1268949179}
+  - component: {fileID: 1268949178}
   m_Layer: 5
   m_Name: scones
   m_TagString: Untagged
@@ -3957,19 +4236,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1268949175}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3038181339631743289, guid: 4b08ff0a7b3ee284292d99597321e170, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1268949175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4054,6 +4321,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1268949178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268949172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &1268949179
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268949172}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1329881256
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,13 +4564,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 864516156}
+        m_TargetAssemblyTypeName: CornerSlotManager, Assembly-CSharp
+        m_MethodName: SetCornerItem
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: -5299349278422335586, guid: 3643ec01fbf395f428ac52fabe2aebf9, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4467,6 +4759,8 @@ GameObject:
   - component: {fileID: 1535242307}
   - component: {fileID: 1535242306}
   - component: {fileID: 1535242309}
+  - component: {fileID: 1535242311}
+  - component: {fileID: 1535242310}
   m_Layer: 5
   m_Name: taiyaki
   m_TagString: Untagged
@@ -4536,19 +4830,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1535242307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
-        m_TargetAssemblyTypeName: SelectionManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 6575687652889216815, guid: 20a3fcb0adad71f439c50da055b1054d, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1535242307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4633,6 +4915,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1535242310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535242304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60deace3455713f4598f4b927418eb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cornerSlotManager: {fileID: 864516156}
+--- !u!225 &1535242311
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535242304}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1615459321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4715,13 +5022,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 864516156}
+        m_TargetAssemblyTypeName: CornerSlotManager, Assembly-CSharp
+        m_MethodName: SetCornerItem
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: -4864520845610660640, guid: f76d3fe25bf18264691f533be2ec9996, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5123,81 +5430,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &1781275928
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1781275929}
-  - component: {fileID: 1781275931}
-  - component: {fileID: 1781275930}
-  m_Layer: 5
-  m_Name: pastryBag
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1781275929
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781275928}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1872860809}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 444, y: 173.77}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1781275930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781275928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 252912823651054363, guid: 3a780f96f8a5c1c4888f204225031ffe, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1781275931
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781275928}
-  m_CullTransparentMesh: 1
 --- !u!1 &1824736788
 GameObject:
   m_ObjectHideFlags: 0
@@ -5340,6 +5572,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 90959863}
   - {fileID: 1180318680}
   - {fileID: 413372280}
   - {fileID: 769980466}
@@ -5352,7 +5585,8 @@ RectTransform:
   - {fileID: 1615459322}
   - {fileID: 1378575833}
   - {fileID: 131945780}
-  - {fileID: 1781275929}
+  - {fileID: 864516155}
+  - {fileID: 1238387691}
   m_Father: {fileID: 983781810}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5410,7 +5644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb2ef2faa5e4f884c8eccde3cd06fdc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayImage: {fileID: 1781275930}
+  displayImage: {fileID: 0}
 --- !u!114 &1872860813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5423,9 +5657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824513414a211644a8bacac3b4402cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slot1: {fileID: 0}
-  slot2: {fileID: 0}
-  resultSprite: {fileID: 0}
+  cornerSlot: {fileID: 1238387692}
+  mergedResult: {fileID: 0}
 --- !u!1 &2002706610
 GameObject:
   m_ObjectHideFlags: 0
