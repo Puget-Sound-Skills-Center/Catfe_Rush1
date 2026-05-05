@@ -11,7 +11,7 @@ public class MenuControl : MonoBehaviour
         menuCanvas.SetActive(true);
     }
 
-    //Updarte is called once per frame
+    //Update is called once per frame
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))

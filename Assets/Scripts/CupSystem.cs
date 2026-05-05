@@ -7,28 +7,32 @@ public class CupSystem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public CornerSlotManager cornerSlotManager;
 
     private Canvas canvas;
-    private Image dragImage; // The clone we drag
+    private Image dragImage;
     private RectTransform dragRect;
-
+    private CanvasGroup canvasGroup;
+    private RectTransform rectTransform;
     private Vector2 startPosition;
 
     void Awake()
     {
         canvas = GetComponentInParent<Canvas>();
+        rectTransform = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
+
+        startPosition = rectTransform.anchoredPosition;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        // Create a clone image
+        canvasGroup.blocksRaycasts = true;
+
         dragImage = new GameObject("DragImage").AddComponent<Image>();
         dragImage.sprite = GetComponent<Image>().sprite;
-        dragImage.raycastTarget = false; // So it doesn't block UI
+        dragImage.raycastTarget = false;
         dragImage.transform.SetParent(canvas.transform, false);
 
         dragRect = dragImage.GetComponent<RectTransform>();
-        dragRect.sizeDelta = GetComponent<RectTransform>().sizeDelta;
-
-        // Position it at the mouse
+        dragRect.sizeDelta = rectTransform.sizeDelta;
         dragRect.position = eventData.position;
     }
 
@@ -40,7 +44,8 @@ public class CupSystem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        // Check overlap with corner slot
+        canvasGroup.blocksRaycasts = true;
+
         RectTransform slotRect = cornerSlotManager.cornerSlot.rectTransform;
 
         if (RectTransformUtility.RectangleContainsScreenPoint(slotRect, Input.mousePosition))
@@ -48,5 +53,7 @@ public class CupSystem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             cornerSlotManager.TryMerge(GetComponent<Image>().sprite);
         }
 
+        // Reset original item
+        rectTransform.anchoredPosition = startPosition;
     }
 }
