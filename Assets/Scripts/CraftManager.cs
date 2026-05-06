@@ -22,5 +22,6 @@ public class CornerSlotManager : MonoBehaviour
         // Later you can add recipe logic here
         cornerSlot.sprite = mergedResult;
         Debug.Log("Merged!");
+
     }
 }

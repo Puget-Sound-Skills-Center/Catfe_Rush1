@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class CupSystem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public CornerSlotManager cornerSlotManager;
+    public CoffeeSlotManager coffeeSlotManager;
 
     private Canvas canvas;
     private Image dragImage;
