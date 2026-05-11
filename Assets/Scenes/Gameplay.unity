@@ -5077,8 +5077,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc0ee969b8763e4aa6b6dde84f6803b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemPrefab: {fileID: 0}
-  contentPanel: {fileID: 0}
+  itemPrefab: {fileID: 7000575299538098888}
+  contentPanel: {fileID: 916056274}
 --- !u!1 &1148518550
 GameObject:
   m_ObjectHideFlags: 0
@@ -5550,6 +5550,7 @@ GameObject:
   - component: {fileID: 1170278965}
   - component: {fileID: 1170278967}
   - component: {fileID: 1170278966}
+  - component: {fileID: 1170278968}
   m_Layer: 5
   m_Name: cornerSlot (1)
   m_TagString: Untagged
@@ -5614,6 +5615,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170278964}
   m_CullTransparentMesh: 1
+--- !u!114 &1170278968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170278964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e037e2be15347824795dd5d409a4a3b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cupSlot: {fileID: 1170278966}
+  hasCup: 0
 --- !u!1 &1172630408
 GameObject:
   m_ObjectHideFlags: 0
@@ -5910,7 +5925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 57.084, y: -0.7850342}
+  m_AnchoredPosition: {x: 73, y: -4.9263916}
   m_SizeDelta: {x: -95.369, y: 11.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203878674
@@ -9704,8 +9719,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 173.97742, y: -124.1044}
-  m_SizeDelta: {x: 487.9548, y: 696.7913}
+  m_AnchoredPosition: {x: 168.3, y: -129.6}
+  m_SizeDelta: {x: 537.9839, y: 628.7516}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002706613
 MonoBehaviour:
@@ -9789,7 +9804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7889903309612880798, guid: 248e247ae2cc97a4ca870395f4754781, type: 3}
+  m_Sprite: {fileID: -6816533313574251911, guid: 4b263390661b8c74b937e8c7f8fcd0a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10662,7 +10677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1355789698825086570, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 200.6192
       objectReference: {fileID: 0}
     - target: {fileID: 1355789698825086570, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10670,7 +10685,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1355789698825086570, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: -100.3096
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005051888871480748, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
+      propertyPath: m_text
+      value: Here it will show the list of ingredients of what's inside of the different
+        pastry items along with a descriptive summary of each item.
       objectReference: {fileID: 0}
     - target: {fileID: 3714275760616876255, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10710,7 +10730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736669968021361952, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 48.833405
+      value: 54.246128
       objectReference: {fileID: 0}
     - target: {fileID: 3736669968021361952, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10718,7 +10738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3736669968021361952, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -54.416702
+      value: -57.123062
       objectReference: {fileID: 0}
     - target: {fileID: 4821826627757259940, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchorMax.x
@@ -10742,7 +10762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5960260825227323141, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 432.901
+      value: 432.2818
       objectReference: {fileID: 0}
     - target: {fileID: 5960260825227323141, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10750,7 +10770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5960260825227323141, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -416.4505
+      value: -416.7601
       objectReference: {fileID: 0}
     - target: {fileID: 6607525353397378582, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10786,7 +10806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7967974377717696448, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 294.0676
+      value: 288.03568
       objectReference: {fileID: 0}
     - target: {fileID: 7967974377717696448, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -10794,7 +10814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7967974377717696448, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -255.8672
+      value: -258.26398
       objectReference: {fileID: 0}
     - target: {fileID: 8547877673067428159, guid: 0ae607c91e02c724c9a68e83d53e3085, type: 3}
       propertyPath: m_AnchorMax.y
