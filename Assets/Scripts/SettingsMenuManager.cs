@@ -7,7 +7,7 @@ using TMPro;
 public class SettingsMenuManager : MonoBehaviour
 {
     public TMP_Dropdown graphicsDropdown;
-
+     
 
 
     public void ChangeGraphicsQuality()
