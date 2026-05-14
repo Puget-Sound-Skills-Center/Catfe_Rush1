@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Body
+    m_Hash: 999990412
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Screenshot_2025-11-19_123257-removebg-preview (1)_0
+      m_Hash: 835996514
+      m_Sprite: {fileID: 8550791828267177603, guid: d8c9712d66a33ca47a59d9c0e59887e7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8550791828267177603, guid: d8c9712d66a33ca47a59d9c0e59887e7, type: 3}
+    - m_Name: Screenshot_2025-11-19_123316-removebg-preview_0
+      m_Hash: 731598825
+      m_Sprite: {fileID: -7889903309612880798, guid: ee5b05c4688534948a8bc403955a2874, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7889903309612880798, guid: ee5b05c4688534948a8bc403955a2874, type: 3}
+    - m_Name: Screenshot_2025-11-19_123335-removebg-preview_0
+      m_Hash: 552993630
+      m_Sprite: {fileID: -8570565830004875224, guid: f1d4ae68f71ef314baf36fa9f5efa179, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8570565830004875224, guid: f1d4ae68f71ef314baf36fa9f5efa179, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: Shirts
+    m_Hash: 27164597
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Screenshot_2025-12-08_115729-removebg-preview_0
+      m_Hash: 787953213
+      m_Sprite: {fileID: -1199650734072701231, guid: a9cd6b99027362d47a88968410fbc8c0, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1199650734072701231, guid: a9cd6b99027362d47a88968410fbc8c0, type: 3}
+    - m_Name: Screenshot_2025-12-08_115737-removebg-preview_0
+      m_Hash: 685113028
+      m_Sprite: {fileID: -806129542977475673, guid: ee3cea73c8e73fe41abfcd7c614ca57f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -806129542977475673, guid: ee3cea73c8e73fe41abfcd7c614ca57f, type: 3}
+    - m_Name: Screenshot_2026-01-12_122928-removebg-preview_0
+      m_Hash: 570106292
+      m_Sprite: {fileID: 4025951199544030763, guid: 035d346981e6d56408a9779b1107b2c2, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4025951199544030763, guid: 035d346981e6d56408a9779b1107b2c2, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: Pants
+    m_Hash: 1035850478
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Screenshot_2026-01-14_125755-removebg-preview_0
+      m_Hash: 1059002536
+      m_Sprite: {fileID: -7386041357450579395, guid: 9515d7d8d3c1bbf4687f9f678059c15f, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7386041357450579395, guid: 9515d7d8d3c1bbf4687f9f678059c15f, type: 3}
+    - m_Name: Screenshot_2026-01-14_125739-removebg-preview_0
+      m_Hash: 437526661
+      m_Sprite: {fileID: -2556571738967770963, guid: 24dd21bff418f9042bc4e12fc681480b, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2556571738967770963, guid: 24dd21bff418f9042bc4e12fc681480b, type: 3}
+    - m_Name: Screenshot_2026-01-14_125749-removebg-preview_0
+      m_Hash: 871605981
+      m_Sprite: {fileID: 2074738663617416157, guid: 3284f2481be3f9241aa98f8d92183043, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2074738663617416157, guid: 3284f2481be3f9241aa98f8d92183043, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  - m_Name: Accessories
+    m_Hash: 664185239
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Screenshot_2025-12-08_120008-removebg-preview_0
+      m_Hash: 163369001
+      m_Sprite: {fileID: -5710278265562436905, guid: e0326e41926e32949bd496cbea898a93, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -5710278265562436905, guid: e0326e41926e32949bd496cbea898a93, type: 3}
+    - m_Name: Screenshot_2026-01-13_113813-removebg-preview_0
+      m_Hash: 308151378
+      m_Sprite: {fileID: 1951928694708977543, guid: 173eed70d05ca52498c44973d5b49cf8, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1951928694708977543, guid: 173eed70d05ca52498c44973d5b49cf8, type: 3}
+    - m_Name: Screenshot_2026-01-13_123308-removebg-preview_0
+      m_Hash: 668155612
+      m_Sprite: {fileID: -3401524858181851951, guid: a3ac8227675b79842aafbee2c4d22845, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3401524858181851951, guid: a3ac8227675b79842aafbee2c4d22845, type: 3}
+    - m_Name: Screenshot_2026-01-13_131857-removebg-preview_0
+      m_Hash: 988279894
+      m_Sprite: {fileID: 3000930527330548959, guid: 94b17bebae3ba3f4f997f8a51ee0ae09, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3000930527330548959, guid: 94b17bebae3ba3f4f997f8a51ee0ae09, type: 3}
+    - m_Name: Screenshot_2026-01-13_131904-removebg-preview_0
+      m_Hash: 256203385
+      m_Sprite: {fileID: 3886466877476220595, guid: 757fe64b75d017545b4b850a4c7c0487, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3886466877476220595, guid: 757fe64b75d017545b4b850a4c7c0487, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 5
+  - m_Name: Aprons
+    m_Hash: 1020992000
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: Screenshot_2025-11-18_133924-removebg-preview_0
+      m_Hash: 586230368
+      m_Sprite: {fileID: -3960368550461647923, guid: cd13396a0e656be46a5cd02d7460a0d4, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3960368550461647923, guid: cd13396a0e656be46a5cd02d7460a0d4, type: 3}
+    - m_Name: Screenshot_2025-11-18_133931-removebg-preview_0
+      m_Hash: 379681249
+      m_Sprite: {fileID: 3695993380978732412, guid: 0e17b258ad79f794db13fa67086006cd, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3695993380978732412, guid: 0e17b258ad79f794db13fa67086006cd, type: 3}
+    - m_Name: Screenshot_2025-11-18_133946-removebg-preview_0
+      m_Hash: 503470378
+      m_Sprite: {fileID: 8230501734471142088, guid: fab6ca43e0650134ba57c4d62699515d, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8230501734471142088, guid: fab6ca43e0650134ba57c4d62699515d, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 3
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 639143603453178805
+  m_Version: 1

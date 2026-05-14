@@ -200,7 +200,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 48545670}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectAccessory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &48545670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +332,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 68988485}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectBreed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &68988485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,9 +598,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 770082039}
-  - {fileID: 549699403}
   - {fileID: 659897243}
   - {fileID: 580223927}
+  - {fileID: 213334405}
+  - {fileID: 1244036695}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -734,6 +759,81 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &213334404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213334405}
+  - component: {fileID: 213334407}
+  - component: {fileID: 213334406}
+  m_Layer: 5
+  m_Name: savebutton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &213334405
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213334404}
+  m_LocalRotation: {x: -0, y: -0, z: -0.9999795, w: 0.0064100493}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 178203600}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12780.735}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 694.98676, y: 486.93613}
+  m_SizeDelta: {x: 82, y: 73}
+  m_Pivot: {x: 0.49999896, y: 0.50000006}
+--- !u!114 &213334406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213334404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8547753632730769120, guid: 644cdfb219c2ab147b81811822978f93, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &213334407
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213334404}
+  m_CullTransparentMesh: 1
 --- !u!1 &341622722
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +915,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 341622725}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectBreed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &341622725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,6 +977,7 @@ GameObject:
   - component: {fileID: 348926868}
   - component: {fileID: 348926870}
   - component: {fileID: 348926869}
+  - component: {fileID: 348926871}
   m_Layer: 5
   m_Name: Aprons
   m_TagString: Untagged
@@ -879,7 +992,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348926867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -889,12 +1002,12 @@ RectTransform:
   - {fileID: 458677881}
   - {fileID: 1274848930}
   - {fileID: 1436218298}
-  m_Father: {fileID: 533796057}
+  m_Father: {fileID: 549699403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -884.58954, y: 0.0033836365}
-  m_SizeDelta: {x: 23.001, y: 956.1699}
+  m_AnchoredPosition: {x: -465.58954, y: 196.0034}
+  m_SizeDelta: {x: -279.9534, y: 463.8921}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &348926869
 MonoBehaviour:
@@ -934,6 +1047,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348926867}
   m_CullTransparentMesh: 1
+--- !u!212 &348926871
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348926867}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &392912827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,7 +1183,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 392912830}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectAccessory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &392912830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,7 +1315,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 458677883}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectApron
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &458677883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1185,6 +1377,7 @@ GameObject:
   - component: {fileID: 491675080}
   - component: {fileID: 491675082}
   - component: {fileID: 491675081}
+  - component: {fileID: 491675083}
   m_Layer: 5
   m_Name: Breed
   m_TagString: Untagged
@@ -1199,7 +1392,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491675079}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1209,12 +1402,12 @@ RectTransform:
   - {fileID: 68988483}
   - {fileID: 1133669739}
   - {fileID: 622829483}
-  m_Father: {fileID: 533796057}
+  m_Father: {fileID: 549699403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -882, y: -0.00002670288}
-  m_SizeDelta: {x: 17.854, y: 956.1768}
+  m_AnchoredPosition: {x: -463, y: 195.99998}
+  m_SizeDelta: {x: -285.1004, y: 463.899}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &491675081
 MonoBehaviour:
@@ -1254,6 +1447,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491675079}
   m_CullTransparentMesh: 1
+--- !u!212 &491675083
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491675079}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &492524104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,7 +1583,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 492524107}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectShirt
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &492524107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1402,11 +1662,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 491675080}
-  - {fileID: 1658733011}
-  - {fileID: 1519282390}
-  - {fileID: 1009051664}
-  - {fileID: 348926868}
+  - {fileID: 549699403}
   m_Father: {fileID: 770082039}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1425,8 +1681,10 @@ GameObject:
   - component: {fileID: 549699403}
   - component: {fileID: 549699405}
   - component: {fileID: 549699404}
+  - component: {fileID: 549699407}
+  - component: {fileID: 549699406}
   m_Layer: 5
-  m_Name: DefaultCharacter
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1439,12 +1697,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549699402}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 178203600}
+  m_Children:
+  - {fileID: 491675080}
+  - {fileID: 1658733011}
+  - {fileID: 1519282390}
+  - {fileID: 1009051664}
+  - {fileID: 348926868}
+  m_Father: {fileID: 533796057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1489,6 +1752,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549699402}
   m_CullTransparentMesh: 1
+--- !u!114 &549699406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549699402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92c2cdeb19dbe0d42a1b51e5f8296d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breedRender: {fileID: 491675083}
+  shirtRender: {fileID: 1658733014}
+  pantsRender: {fileID: 1519282393}
+  apronRender: {fileID: 348926871}
+  accRender: {fileID: 1009051667}
+  catBreeds:
+  - {fileID: -8570565830004875224, guid: f1d4ae68f71ef314baf36fa9f5efa179, type: 3}
+  - {fileID: -7889903309612880798, guid: ee5b05c4688534948a8bc403955a2874, type: 3}
+  - {fileID: 8550791828267177603, guid: d8c9712d66a33ca47a59d9c0e59887e7, type: 3}
+  shirts:
+  - {fileID: -1199650734072701231, guid: a9cd6b99027362d47a88968410fbc8c0, type: 3}
+  - {fileID: -806129542977475673, guid: ee3cea73c8e73fe41abfcd7c614ca57f, type: 3}
+  - {fileID: 4025951199544030763, guid: 035d346981e6d56408a9779b1107b2c2, type: 3}
+  pants:
+  - {fileID: -7386041357450579395, guid: 9515d7d8d3c1bbf4687f9f678059c15f, type: 3}
+  - {fileID: 2074738663617416157, guid: 3284f2481be3f9241aa98f8d92183043, type: 3}
+  - {fileID: -2556571738967770963, guid: 24dd21bff418f9042bc4e12fc681480b, type: 3}
+  aprons:
+  - {fileID: -3960368550461647923, guid: cd13396a0e656be46a5cd02d7460a0d4, type: 3}
+  - {fileID: 3695993380978732412, guid: 0e17b258ad79f794db13fa67086006cd, type: 3}
+  - {fileID: 8230501734471142088, guid: fab6ca43e0650134ba57c4d62699515d, type: 3}
+  accessories:
+  - {fileID: -5710278265562436905, guid: e0326e41926e32949bd496cbea898a93, type: 3}
+  - {fileID: 1951928694708977543, guid: 173eed70d05ca52498c44973d5b49cf8, type: 3}
+  - {fileID: 3000930527330548959, guid: 94b17bebae3ba3f4f997f8a51ee0ae09, type: 3}
+  - {fileID: -3401524858181851951, guid: a3ac8227675b79842aafbee2c4d22845, type: 3}
+  - {fileID: 3886466877476220595, guid: 757fe64b75d017545b4b850a4c7c0487, type: 3}
+--- !u!212 &549699407
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549699402}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &580223926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,7 +1882,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 579.29645, y: 489.92322}
-  m_SizeDelta: {x: 82.5237, y: 73.7232}
+  m_SizeDelta: {x: 82, y: 73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &580223928
 MonoBehaviour:
@@ -1845,7 +2202,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659897242}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1854,7 +2211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 734.96, y: 495.37}
+  m_AnchoredPosition: {x: 734.95984, y: 495.37006}
   m_SizeDelta: {x: 430, y: 95}
   m_Pivot: {x: 0.50000006, y: 0.58873016}
 --- !u!114 &659897244
@@ -2479,6 +2836,7 @@ GameObject:
   - component: {fileID: 1009051664}
   - component: {fileID: 1009051666}
   - component: {fileID: 1009051665}
+  - component: {fileID: 1009051667}
   m_Layer: 5
   m_Name: Accessory
   m_TagString: Untagged
@@ -2493,7 +2851,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009051663}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2503,12 +2861,12 @@ RectTransform:
   - {fileID: 48545668}
   - {fileID: 1183487126}
   - {fileID: 1803690628}
-  m_Father: {fileID: 533796057}
+  m_Father: {fileID: 549699403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -882.48, y: 0.003326416}
-  m_SizeDelta: {x: 18.784, y: 956.1699}
+  m_AnchoredPosition: {x: -463.48004, y: 196.00334}
+  m_SizeDelta: {x: -284.1704, y: 463.8921}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009051665
 MonoBehaviour:
@@ -2548,6 +2906,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009051663}
   m_CullTransparentMesh: 1
+--- !u!212 &1009051667
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009051663}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1047011915
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,7 +3162,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1068087894}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectPants
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1068087894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2869,7 +3294,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1109599866}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectPants
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1109599866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3109,7 +3546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1164266787}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectApron
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1164266787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3229,7 +3678,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1183487128}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectAccessory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1183487128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3511,7 +3972,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1205889377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectApron
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1205889377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3549,6 +4022,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205889374}
+  m_CullTransparentMesh: 1
+--- !u!1 &1244036694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244036695}
+  - component: {fileID: 1244036697}
+  - component: {fileID: 1244036696}
+  m_Layer: 5
+  m_Name: Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1244036695
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244036694}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 178203600}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 861, y: 489.92}
+  m_SizeDelta: {x: 83, y: 73}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1244036696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244036694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6964871260671746854, guid: 05075a889bfde6447a536ea8dca2ef8b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1244036697
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244036694}
   m_CullTransparentMesh: 1
 --- !u!1 &1274848929
 GameObject:
@@ -3751,7 +4299,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1281453306}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectShirt
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1281453306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3871,7 +4431,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1307021359}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectBreed
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1307021359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4186,7 +4758,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1507641814}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectPants
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1507641814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4236,6 +4820,7 @@ GameObject:
   - component: {fileID: 1519282390}
   - component: {fileID: 1519282392}
   - component: {fileID: 1519282391}
+  - component: {fileID: 1519282393}
   m_Layer: 5
   m_Name: Pants
   m_TagString: Untagged
@@ -4250,7 +4835,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519282389}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4260,12 +4845,12 @@ RectTransform:
   - {fileID: 1507641812}
   - {fileID: 746141541}
   - {fileID: 103774980}
-  m_Father: {fileID: 533796057}
+  m_Father: {fileID: 549699403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -882.01, y: 0.0013618469}
-  m_SizeDelta: {x: 17.8418, y: 979.0635}
+  m_AnchoredPosition: {x: -463.01, y: 196.00137}
+  m_SizeDelta: {x: -285.1126, y: 486.78564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519282391
 MonoBehaviour:
@@ -4305,6 +4890,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519282389}
   m_CullTransparentMesh: 1
+--- !u!212 &1519282393
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519282389}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1528193398
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,6 +5106,7 @@ GameObject:
   - component: {fileID: 1658733011}
   - component: {fileID: 1658733013}
   - component: {fileID: 1658733012}
+  - component: {fileID: 1658733014}
   m_Layer: 5
   m_Name: Shirt
   m_TagString: Untagged
@@ -4480,7 +5121,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658733010}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4490,12 +5131,12 @@ RectTransform:
   - {fileID: 1281453304}
   - {fileID: 1047011916}
   - {fileID: 1696837639}
-  m_Father: {fileID: 533796057}
+  m_Father: {fileID: 549699403}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -896.0941, y: -86.391}
-  m_SizeDelta: {x: 15.8118, y: 956.17}
+  m_AnchoredPosition: {x: -477.0943, y: 154.08752}
+  m_SizeDelta: {x: -287.1426, y: 463.89215}
   m_Pivot: {x: 0.50000006, y: 0.4096475}
 --- !u!114 &1658733012
 MonoBehaviour:
@@ -4535,6 +5176,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658733010}
   m_CullTransparentMesh: 1
+--- !u!212 &1658733014
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658733010}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1694530926
 GameObject:
   m_ObjectHideFlags: 0
@@ -4616,7 +5312,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1694530929}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectShirt
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1694530929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4922,7 +5630,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1803690630}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectAccessory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1803690630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5042,7 +5762,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1837629109}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549699406}
+        m_TargetAssemblyTypeName: ClothingSwap, Assembly-CSharp
+        m_MethodName: SelectAccessory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1837629109
 MonoBehaviour:
   m_ObjectHideFlags: 0
