@@ -54,7 +54,7 @@ public class ClothingSwap : MonoBehaviour
         accRender.sprite = accessories[currentSelection.accIndex];
     }
 
-    // SAVE/LOAD MECHANICS: Keeps progress safe from file
+    // Save/Load Mechanics: Keeps progress safe from file
     public void SaveProgress()
     {
         string json = JsonUtility.ToJson(currentSelection);
