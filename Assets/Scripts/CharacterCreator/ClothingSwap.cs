@@ -22,11 +22,11 @@ public class ClothingSwap : MonoBehaviour
     public SpriteRenderer accRender;
 
     [Header("Asset Arrays (Drop your images here)")]
-    public Sprite[] catBreeds;
-    public Sprite[] shirts;
+    public Sprite[] Breed;
+    public Sprite[] Shirt;
     public Sprite[] pants;
-    public Sprite[] aprons;
-    public Sprite[] accessories;
+    public Sprite[] Aprons;
+    public Sprite[] Accessory;
 
     private SaveData currentSelection = new SaveData();
     private string saveFilePath;
@@ -38,20 +38,46 @@ public class ClothingSwap : MonoBehaviour
     }
 
     // BUTTON MECHANICS: Call these directly from your UI buttons
-    public void SelectBreed(int index) { currentSelection.breedIndex = index; UpdateVisuals(); }
-    public void SelectShirt(int index) { currentSelection.shirtIndex = index; UpdateVisuals(); }
-    public void SelectPants(int index) { currentSelection.pantsIndex = index; UpdateVisuals(); }
-    public void SelectApron(int index) { currentSelection.apronIndex = index; UpdateVisuals(); }
-    public void SelectAccessory(int index) { currentSelection.accIndex = index; UpdateVisuals(); }
+    // Call these from a "Next" button in Unity
+    public void NextBreed()
+    {
+        currentSelection.breedIndex = (currentSelection.breedIndex + 1) % Breed.Length;
+        UpdateVisuals();
+    }
+
+    public void NextShirt()
+    {
+        currentSelection.shirtIndex = (currentSelection.shirtIndex + 1) % Shirt.Length;
+        UpdateVisuals();
+    }
+
+    public void NextPants()
+    {
+        currentSelection.pantsIndex = (currentSelection.pantsIndex + 1) % pants.Length;
+        UpdateVisuals();
+    }
+
+    public void NextApron()
+    {
+        currentSelection.apronIndex = (currentSelection.apronIndex + 1) % Aprons.Length;
+        UpdateVisuals();
+    }
+
+    public void NextAccessory()
+    {
+        currentSelection.accIndex = (currentSelection.accIndex + 1) % Accessory.Length;
+        UpdateVisuals();
+    }
+
 
     private void UpdateVisuals()
     {
         // Cycles through arrays based on current selection index
-        breedRender.sprite = catBreeds[currentSelection.breedIndex];
-        shirtRender.sprite = shirts[currentSelection.shirtIndex];
+        breedRender.sprite = Breed[currentSelection.breedIndex];
+        shirtRender.sprite = Shirt[currentSelection.shirtIndex];
         pantsRender.sprite = pants[currentSelection.pantsIndex];
-        apronRender.sprite = aprons[currentSelection.apronIndex];
-        accRender.sprite = accessories[currentSelection.accIndex];
+        apronRender.sprite = Aprons[currentSelection.apronIndex];
+        accRender.sprite = Accessory[currentSelection.accIndex];
     }
 
     // Save/Load Mechanics: Keeps progress safe from file
