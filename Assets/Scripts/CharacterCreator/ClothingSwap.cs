@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.IO;
+using System.Collections;
+using System.Collections.Generic;
 using Unity.Android.Gradle;
 
 public class ClothingSwap : MonoBehaviour
@@ -23,8 +25,8 @@ public class ClothingSwap : MonoBehaviour
 
     [Header("Asset Arrays (Drop your images here)")]
     public Sprite[] Breed;
-    public Sprite[] Shirt;
-    public Sprite[] pants;
+    public Sprite[] Shirt; 
+    public Sprite[] pants; 
     public Sprite[] Aprons;
     public Sprite[] Accessory;
 
@@ -37,7 +39,7 @@ public class ClothingSwap : MonoBehaviour
         LoadProgress();
     }
 
-    // BUTTON MECHANICS: Call these directly from your UI buttons
+    // Button Mechanics: Call these directly from your UI buttons
     // Call these from a "Next" button in Unity
     public void NextBreed()
     {
