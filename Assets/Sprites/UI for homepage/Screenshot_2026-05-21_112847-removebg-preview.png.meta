@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 4b08ff0a7b3ee284292d99597321e170
+guid: b13c1e8b0995a304a9f0d6d887035f5e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8547753632730769120
-    second: Screenshot_2026-04-17_132240-removebg-preview_0
-  - first:
-      213: -3038181339631743289
-    second: Screenshot_2026-04-17_132240-removebg-preview_1
+      213: -5725097368669105276
+    second: Screenshot_2026-05-21_112847-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -181,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screenshot_2026-04-17_132240-removebg-preview_0
+      name: Screenshot_2026-05-21_112847-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 121
-        width: 367
-        height: 394
+        x: 6
+        y: 28
+        width: 473
+        height: 439
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,30 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0e6e87a14a8bf9670800000000000000
-      internalID: 8547753632730769120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Screenshot_2026-04-17_132240-removebg-preview_1
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 34
-        width: 188
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ce87082b2636d5d0800000000000000
-      internalID: -3038181339631743289
+      spriteID: 48354fba64e5c80b0800000000000000
+      internalID: -5725097368669105276
       vertices: []
       indices: 
       edges: []
@@ -238,8 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Screenshot_2026-04-17_132240-removebg-preview_0: 8547753632730769120
-      Screenshot_2026-04-17_132240-removebg-preview_1: -3038181339631743289
+      Screenshot_2026-05-21_112847-removebg-preview_0: -5725097368669105276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
